@@ -1,0 +1,21 @@
+syntax = "proto3";
+package ProjectX;
+message login
+{
+    string username = 1;
+    string password = 2;
+}
+message player{
+    int32 type = 1;
+    int32 uid = 2;
+    string ue4server = 3;
+    int32 port = 4;
+}
+message server{
+    string ip = 1;
+}
+message match{
+    int32 type = 1;
+    int32 playerid = 2;
+    int32 port = 3;
+}
